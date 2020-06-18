@@ -1,0 +1,41 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "awsamplifyvuemaster072b0c55",
+            "privacy": {
+                "private": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ]
+            }
+        }
+    ],
+    "resourceName": "apiffdceb0d",
+    "apiName": "apiffdceb0d",
+    "functionArns": [
+        {
+            "lambdaFunction": "awsamplifyvuemaster072b0c55"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 0,
+        "authRoleName": "amplify-awsamplifyvuemaster-dev-173023-authRole",
+        "unAuthRoleName": "amplify-awsamplifyvuemaster-dev-173023-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "awsamplifyvuemaster072b0c55",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

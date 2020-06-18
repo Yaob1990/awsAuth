@@ -1,0 +1,12 @@
+{
+    "permissions": {
+        "auth": {
+            "awsamplifyvuemasterf2e00598": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        }
+    }
+}
