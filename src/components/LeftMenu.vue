@@ -8,7 +8,7 @@
   import Tree2 from "./Tree2"
   export default {
 		name: "LeftMenu",
-    components: {Tree2, Tree},
+    components: {Tree2},
     data () {
       return {
         list : [

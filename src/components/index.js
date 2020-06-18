@@ -14,7 +14,6 @@ import Vue from 'vue';
 import Menu from './Menu';
 import Home from './Home';
 
-Vue.component('profile-form', ProfileForm)
 
 export {
   Menu,

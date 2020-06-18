@@ -65,24 +65,9 @@ const router = new Router({
       meta: { requiresAuth: true}
     },
     {
-      path: '/notes',
-      name: 'Notes',
-      component: Notes,
-      params: {
-        'foo': 'bar'
-      },
-      meta: { requiresAuth: true}
-    },
-    {
       path: '/menu',
       name: 'Menu',
       component: Menu,
-      meta: { requiresAuth: true}
-    },
-    {
-      path: '/profile',
-      name: 'Profile',
-      component: Profile,
       meta: { requiresAuth: true}
     },
     {
