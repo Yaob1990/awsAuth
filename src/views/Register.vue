@@ -120,6 +120,9 @@
                 <a-button type="primary" html-type="submit" block>
                   Sign up
                 </a-button>
+                <a-button @click="back" block>
+                  Back
+                </a-button>
               </a-form-item>
             </a-form>
           </a-card>
@@ -240,6 +243,9 @@ export default {
     },
     showModal() {
       this.visible = true;
+    },
+    back() {
+      this.$router.push('Login');
     },
   },
 };
