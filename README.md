@@ -1,1 +1,1 @@
-预览地址：https://yaob1990.github.io/awsAuth/#/auth?redirect=%2F
+预览地址：https://yaob1990.github.io/awsAuth/#/login
