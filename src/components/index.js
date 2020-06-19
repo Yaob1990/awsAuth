@@ -12,10 +12,6 @@
  */
 import Vue from 'vue';
 import Menu from './Menu';
-import Home from './Home';
+import Home from '../views/Home';
 
-
-export {
-  Menu,
-  Home,
-}
+export { Menu, Home };

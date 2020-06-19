@@ -11,20 +11,40 @@
  * and limitations under the License.
  */
 
-import Vue from 'vue'
-import Vuex from 'vuex'
+import Vue from 'vue';
+import Vuex from 'vuex';
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
 const store = new Vuex.Store({
   state: {
-    user: null
+    user: null,
+    loadingNum: 0,
+    // 菜单同步
+    selectedName: [],
   },
   mutations: {
     setUser(state, user) {
-      state.user = user
+      state.user = user;
     },
-  }
-})
+    showLoading(state) {
+      state.loadingNum++;
+    },
+    closeLoading(state) {
+      if (state.loadingNum <= 0) return;
+      if (state.loadingNum === 1) {
+        // 合并 300ms 内请求loading
+        setTimeout(() => {
+          state.loadingNum--;
+        }, 300);
+      } else {
+        state.loadingNum--;
+      }
+    },
+    setSelectedName(state, data) {
+      state.selectedName = data;
+    },
+  },
+});
 
-export default store
+export default store;

@@ -2,10 +2,11 @@
   <div class="card">
     <div class="title">
       <span>Interior Lightning Service</span>
-      <span class="orange">Service description
+      <span class="orange"
+        >Service description
 
-          <i class="el-icon-arrow-right"></i>
-         </span>
+        <i class="el-icon-arrow-right"></i>
+      </span>
     </div>
     <div class="main">
       <div class="left">
@@ -31,7 +32,8 @@
       <div class="right">
         <div>
           <div class="orange">Full Refund</div>
-          <div>Amount Paid
+          <div>
+            Amount Paid
             <el-tooltip effect="dark" content="notice" placement="left">
               <span class="questionColor">
                 <i class="el-icon-question"></i>
@@ -41,7 +43,8 @@
           <div>$50</div>
         </div>
         <div class="mt20">
-          <div>Refunded:
+          <div>
+            Refunded:
             <el-tooltip effect="dark" content="notice" placement="left">
               <span class="questionColor">
                 <i class="el-icon-question"></i>
@@ -59,90 +62,87 @@
 </template>
 
 <script>
-  export default {
-    name: "Card"
-  }
+export default {
+  name: 'Card',
+};
 </script>
 
 <style scoped lang="scss">
-  .inlineBlock {
-    display: inline-block;
-  }
+.card {
+  background-color: #fff;
+}
+.inlineBlock {
+  display: inline-block;
+}
 
-  .ml20 {
-    margin-left: 20px;
-  }
+.ml20 {
+  margin-left: 20px;
+}
 
-  .mt20 {
-    margin-top: 20px;
-  }
+.mt20 {
+  margin-top: 20px;
+}
 
-  .gray {
-    color: #c6c6c6;
-  }
+.gray {
+  color: #c6c6c6;
+}
 
-  .orange {
-    color: #d9a671;
-  }
+.orange {
+  color: #d9a671;
+}
 
-  .questionColor {
-    color: #7d7a7a;
-  }
+.questionColor {
+  color: #7d7a7a;
+}
 
+.card {
+  /*width: 500px;*/
+  padding: 20px 20px 30px;
+  box-shadow: 0 0 6px 6px #f3ecec;
 
-  .card {
-    width: 500px;
-    padding: 20px 20px 30px;
-    box-shadow: 0 0 6px 6px #f3ecec;
+  .title {
+    display: flex;
+    line-height: 40px;
+    justify-content: space-between;
+    border-bottom: 1px solid #f3f3f3;
 
-    .title {
-      display: flex;
-      line-height: 40px;
-      justify-content: space-between;
-      border-bottom: 1px solid #f3f3f3;
-
-      span:nth-child(1) {
-        font-weight: bold;
-        font-size: 20px;
-      }
-
-      span:nth-child(2) {
-        cursor: pointer;
-      }
-
+    span:nth-child(1) {
+      font-weight: bold;
+      font-size: 20px;
     }
-  ;
 
-    .main {
-      padding: 20px 0;
-      display: flex;
-      border-bottom: 5px solid #dfdfdf;
-      justify-content: space-between;
+    span:nth-child(2) {
+      cursor: pointer;
+    }
+  }
+  .main {
+    padding: 20px 0;
+    display: flex;
+    border-bottom: 5px solid #dfdfdf;
+    justify-content: space-between;
 
-      .left {
-        & > div {
-          div:nth-child(2) {
-            line-height: 20px;
-          }
-        }
-      }
-
-      .right {
-        border-left: 1px solid #e5e5e5;
-        padding-left: 30px;
-        font-size: 18px;
-
-        .question {
-          width: 15px;
-          height: 15px;
+    .left {
+      & > div {
+        div:nth-child(2) {
+          line-height: 20px;
         }
       }
     }
-  ;
 
-    .footer {
-      text-align: right;
-      margin-top: 5px;
+    .right {
+      border-left: 1px solid #e5e5e5;
+      padding-left: 30px;
+      font-size: 18px;
+
+      .question {
+        width: 15px;
+        height: 15px;
+      }
     }
   }
+  .footer {
+    text-align: right;
+    margin-top: 5px;
+  }
+}
 </style>
