@@ -1,15 +1,15 @@
 <template>
   <div>
-    <Tree2 :list.sync="list" @setMenu="setMenu"></Tree2>
+    <Tree :list.sync="list" @setMenu="setMenu"></Tree>
   </div>
 </template>
 
 <script>
-import Tree2 from './Tree2';
+import Tree from './Tree';
 
 export default {
   name: 'LeftMenu',
-  components: { Tree2 },
+  components: { Tree },
   data() {
     return {
       list: [

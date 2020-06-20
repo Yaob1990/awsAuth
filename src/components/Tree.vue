@@ -30,7 +30,7 @@
 import { mapMutations, mapState } from 'vuex';
 
 export default {
-  name: 'Tree2',
+  name: 'Tree',
   props: {
     list: {
       type: Array,
