@@ -13,8 +13,7 @@
             <Card class="detailCard"></Card>
           </template>
           <div class="pagination">
-            <el-pagination background layout="prev, pager, next" :total="50">
-            </el-pagination>
+            <a-pagination v-model="current" :total="50" show-less-items />
           </div>
         </template>
       </template>
@@ -35,6 +34,7 @@ export default {
   data() {
     return {
       menu: 'Upcoming Bookings',
+      current: 1,
     };
   },
   methods: {

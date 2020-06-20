@@ -34,22 +34,28 @@
           <div class="orange">Full Refund</div>
           <div>
             Amount Paid
-            <el-tooltip effect="dark" content="notice" placement="left">
+            <a-tooltip placement="left">
+              <template slot="title">
+                notice
+              </template>
               <span class="questionColor">
                 <i class="el-icon-question"></i>
               </span>
-            </el-tooltip>
+            </a-tooltip>
           </div>
           <div>$50</div>
         </div>
         <div class="mt20">
           <div>
             Refunded:
-            <el-tooltip effect="dark" content="notice" placement="left">
+            <a-tooltip placement="left">
+              <template slot="title">
+                notice
+              </template>
               <span class="questionColor">
                 <i class="el-icon-question"></i>
               </span>
-            </el-tooltip>
+            </a-tooltip>
           </div>
           <div>$50</div>
         </div>
